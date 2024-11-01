@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Gallery</title>
+    <link rel="stylesheet" href="art gallery.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Digital Art Gallery</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#artists">Artists</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h2>Welcome to the Digital Art Gallery</h2>
+            <p>Experience captivating digital artworks from talented artists around the world.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://theymakeart.com/cdn/shop/products/image_7b571ac5-ec64-48f0-89c8-a68d0f61c060_large.jpg?v=1631182841" alt="Abstract Art" class="gallery-item"  height="500" width="300">
+            <img src="https://img.freepik.com/premium-photo/red-black-poster-man-with-beard-mustache_1308175-98319.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727740800&semt=ais_hybrid" alt="Digital Portrait" class="gallery-item" height="500" width="300">
+            <img src="https://img.freepik.com/premium-photo/serene-autumn-landscape-watercolor-ink-painting-by-erik-johansson_899449-203387.jpg" alt="Landscape Art" class="gallery-item" height="500" width="300">
+            <img src="https://admin.itsnicethat.com/images/Kjm5b-GOKlr3LHAsE4Ob_qznDoU=/36312/format-webp%7Cwidth-2880/541ab40b5c3e3c196c0043ac.jpg" alt="Surrealism" class="gallery-item"  height="500" width="300">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Modal for Artwork View -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Artists Section -->
+    <section id="artists">
+        <h2>Featured Artists</h2>
+        <div class="artist-container">
+            <div class="artist">
+                <img src="https://images.squarespace-cdn.com/content/v1/61cf13c7f430e743d07e1717/027051e6-410f-4a28-97f2-ef72c3d4e786/brianmiller.jpg" alt="Artist 1">
+                <h3>Brian Miller </h3>
+                <p>Specializes in surreal digital landscapes and abstract art.</p>
+            </div>
+            <div class="artist">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgmuPGbhrySn_zz8T7X5yQoEqBjSKU9OsIjtPArAk-sIDfWMK29ZyDvZr32CD5n3JMhSY&usqp=CAU" alt="Johansson">
+                <h3>Erik Johansson</h3>
+                <p>Known for vibrant portraits and creative digital illustrations.</p>
+            </div>
+            <!-- Add more artist profiles as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="art gallery.js"></script>
+</body>
+</html>
